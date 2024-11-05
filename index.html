@@ -43,7 +43,8 @@
             }
             .graph {
                 margin: 20px 0;
-                text-align: center; /* Center align graphs */
+                text-align: center;
+                cursor: pointer; /* Indicate the image is clickable */
             }
             footer {
                 text-align: center;
@@ -72,6 +73,47 @@
                 margin-top: 10px;
                 color: #555;
             }
+
+            /* Modal Styles (Lightbox) */
+            .modal {
+                display: none; /* Hidden by default */
+                position: fixed;
+                z-index: 1;
+                padding-top: 100px;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                overflow: auto;
+                background-color: rgb(0,0,0); /* Fallback color */
+                background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+            }
+
+            .modal-content {
+                margin: auto;
+                display: block;
+                width: 80%;
+                max-width: 700px;
+            }
+
+            /* Modal close button */
+            .close {
+                position: absolute;
+                top: 15px;
+                right: 35px;
+                color: #f1f1f1;
+                font-size: 40px;
+                font-weight: bold;
+                transition: 0.3s;
+            }
+
+            .close:hover,
+            .close:focus {
+                color: #bbb;
+                text-decoration: none;
+                cursor: pointer;
+            }
+
         </style>
     </head>
 <body>
@@ -84,7 +126,7 @@
         
         <h2>Graph 1: Most Prominent Christmas Carol</h2>
         <div class="graph">
-            <img src="plots/plot1.png" alt="Graph 1: Top Songs by Rank" />
+            <img src="plots/plot1.png" alt="Graph 1: Top Songs by Rank" id="img1" />
         </div>
         <p class="explanation">
             This graph shows the most popular Christmas carols, ranked by the total number of weeks that each song spent on the Billboard Top 100. 
@@ -93,26 +135,25 @@
 
         <h2>Graph 2: Christmas Carol Ranking</h2>
         <div class="graph">
-            <img src="plots/plot2.png" alt="Graph 2: Artist Frequency" />
+            <img src="plots/plot2.png" alt="Graph 2: Artist Frequency" id="img2" />
         </div>
         <p class="explanation">
-            This graph displays the rankings of the top five Christmas carols from the previous graph, showing how their positions have fluctated over time.
+            This graph displays the rankings of the top five Christmas carols from the previous graph, showing how their positions have fluctuated over time.
             It highlights both the consistency and changing popularity of certain songs.
         </p>
 
         <h2>Graph 3: Number of Christmas Carols in Billboard Top 100</h2>
         <div class="graph">
-            <img src="plots/plot3.png" alt="Graph 3: Genre Distribution" />
+            <img src="plots/plot3.png" alt="Graph 3: Genre Distribution" id="img3" />
         </div>
         <p class="explanation">
             This graph visualizes the total number of Christmas carols that made it to the Billboard Top 100 across the years, showing the trends of the prevalence of holiday music in the charts.
-            In earlier years, there seems to be much higher number of Christmas carols compared to today.
+            In earlier years, there seems to be a much higher number of Christmas carols compared to today.
         </p>
-
 
         <h2>Graph 4: Peak Positions Histogram</h2>
         <div class="graph">
-            <img src="plots/plot4.png" alt="Graph 4: Yearly Trends" />
+            <img src="plots/plot4.png" alt="Graph 4: Yearly Trends" id="img4" />
         </div>
         <p class="explanation">
             This histogram illustrates the distribution of the peak positions for the Christmas carols. A lower position means a higher ranking.
@@ -121,7 +162,7 @@
 
         <h2>Graph 5: Consecutive Topping Christmas Carols</h2>
         <div class="graph">
-            <img src="plots/plot5.png" alt="Graph 5: Chart Performance Over Time" />
+            <img src="plots/plot5.png" alt="Graph 5: Chart Performance Over Time" id="img5" />
         </div>
         <p class="explanation">
             This graph tracks the performance of Christmas carols that have topped the Billboard 100 for consecutive years. It highlights songs that have seen long-term popularity.
@@ -131,5 +172,36 @@
     <footer>
         <p>© 2024 Willa Liou. All rights reserved.</p>
     </footer>
+
+    <!-- Modal (Lightbox) -->
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <script>
+        // Modal functionality for lightbox effect
+        var modal = document.getElementById("myModal");
+        var modalImg = document.getElementById("modalImage");
+
+        // Function to open the modal with the clicked image
+        document.getElementById("img1").onclick = function() { openModal(this); }
+        document.getElementById("img2").onclick = function() { openModal(this); }
+        document.getElementById("img3").onclick = function() { openModal(this); }
+        document.getElementById("img4").onclick = function() { openModal(this); }
+        document.getElementById("img5").onclick = function() { openModal(this); }
+
+        // Function to set image in the modal and display it
+        function openModal(img) {
+            modal.style.display = "block";
+            modalImg.src = img.src;
+        }
+
+        // Function to close the modal
+        function closeModal() {
+            modal.style.display = "none";
+        }
+    </script>
+
 </body>
 </html>
