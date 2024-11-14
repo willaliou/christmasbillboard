@@ -9,9 +9,11 @@ body {
 }
 
 header {
-    background-color: #a52a2a;
+    background-image: url(pics/xmasheader.jpg);
+    background-size: cover;
+    background-position: center center;
     color: #fff;
-    padding: 20px;
+    padding: 30px;
     text-align: center;
     border-bottom: 5px solid #c0c0c0;
 }
@@ -22,6 +24,13 @@ header {
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+.dataset-link {
+    color: #0b8e14;
+}
+
+.dataset-link:hover {
+    text-decoration: underline;
 }
 
 main {
@@ -57,6 +66,7 @@ h2 {
 
 p {
     line-height: 1.6;
+    font-size: 1.3em;
 }
 
 .graph {
