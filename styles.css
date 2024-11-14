@@ -16,6 +16,13 @@ header {
     border-bottom: 5px solid #c0c0c0;
 }
 
+.intro-media {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
 
 main {
     max-width: 1200px;
@@ -34,9 +41,12 @@ h1 {
 }
 
 h2 {
-    margin-top: 40px;
+    margin-top: 60px;
     font-size: 1.8em;
-    color: #a52a2a; /* Dark red */
+    color: #a52a2a;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 p {
@@ -74,7 +84,6 @@ p {
 }
 
 .explanation {
-    font-style: italic;
     margin-top: 10px;
     color: #555;
 }
