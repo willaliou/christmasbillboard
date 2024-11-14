@@ -15,6 +15,7 @@ header {
     color: #fff;
     padding: 30px;
     text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     border-bottom: 5px solid #c0c0c0;
 }
 
@@ -25,6 +26,7 @@ header {
     align-items: center;
     text-align: center;
 }
+
 .dataset-link {
     color: #0b8e14;
 }
@@ -51,7 +53,7 @@ main img {
 }
 
 h1 {
-    font-family: 'Cinzel', serif;
+    font-family: 'Fredoka', sans-serif;
     font-size: 2.5em;
     margin-bottom: 10px;
 }
