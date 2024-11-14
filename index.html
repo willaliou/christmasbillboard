@@ -9,67 +9,87 @@
 </head>
 <body>
     <header>
-        <h1>Christmas Billboard Top 100</h1>
+        <h1>Christmas Songs on the Billboard Top 100</h1>
         <p>By: Willa Liou</p>
-        <p class="blurb">
-            Every year, as the holiday season rolls around, Christmas music fills the air—whether it's in stores, on the radio, or at family gatherings. The same familiar songs seem to appear, bringing a sense of nostalgia and tradition. But have you ever wondered which songs have truly stood the test of time? What makes certain Christmas carols perennial favorites, while others fade into obscurity?
-            This project was born out of my own curiosity about the holiday tunes that have made their way to the top of the charts year after year. By exploring the Christmas Billboard Top 100 dataset from 1958 to 2017, I set out to understand how these songs have evolved and what keeps them so popular. From the most iconic hits to the less obvious chart-toppers, each graph in this portfolio tells a different part of the story—about their rise, their longevity, and their cultural impact.
-            This portfolio explores the fascinating trends and patterns in Christmas music’s chart history, and join me as I discover why certain carols have become timeless staples of the holiday season.    
-        </p>
+        <p>DSCI 304 Final Project</p>
     </header>
 
     <main>
-        <p>Welcome to my portfolio showcasing five graphs that analyze trends from the Christmas Billboard Top 100. Each visual represents unique insights drawn from the dataset. Click on the graphs to view them in detail.</p>
-        
-        <h2>Graph 1: Most Prominent Christmas Carol</h2>
+        <h2>IT'S TIIMMMMEEE!!!!</h2>
+        <div class = "intro-media">
+            <!-- Add mariah carey image or video -->
+        </div>
+        <p class = "introduction">
+            Every year, as the holiday season rolls around, Christmas music fills the air—whether it's in stores, on the radio, or at family gatherings. The same familiar songs seem to appear, bringing a sense of nostalgia and tradition. 
+            But have you ever wondered which songs have truly stood the test of time? What makes certain Christmas carols perennial favorites, while others fade into obscurity? 
+            This project was born out of my own curiosity about the holiday tunes that have made their way to the top of the charts year after year. By exploring the Christmas Billboard Top 100 dataset from 1958 to 2017, I set out to understand how these songs have evolved and what keeps them so popular. From the most iconic hits to the less obvious chart-toppers, each graph in this portfolio tells a different part of the story—about their rise, their longevity, and their cultural impact. 
+            This portfolio explores the fascinating trends and patterns in Christmas music’s chart history, and join me as I discover why certain carols have become timeless staples of the holiday season.
+        </p>
+        <!-- GRAPH 1 -->
+        <p class="explanation">Let’s start with the basics - which Christmas song has dominated the charts for the longest number of weeks? Let’s visualize it with a simple bar chart.</p>
         <div class="graph">
             <img src="plots/plot1.png" alt="Graph 1: Top Songs by Rank" id="img1" />
         </div>
         <p class="explanation">
-            This graph shows the most popular Christmas carols, ranked by the total number of weeks that each song spent on the Billboard Top 100. 
-            Jingle Bell Rock came out on top. 
+            Sorry Mariah, it seems like Jingle Bell Rock came out on top. 
+            However, there’s still hope, as All I Want for Christmas Is You faces a significant disadvantage—Bobby Helms' Jingle Bell Rock was released in 1957, while Mariah’s holiday hit dropped in 1994. The next two strong contenders are Better Days and The Chipmunk Song.
         </p>
 
-        <h2>Graph 2: Christmas Carol Ranking</h2>
+        <p>
+            Let’s further examine the positions of a couple of the top songs on the list, but by the year they were on the Billboard Top 100. 
+        </p>
+
+        <!-- GRAPH 2 -->
+        <p class="explanation">
+            Let’s further examine the positions of a couple of the top songs on the list, but by the year they were on the Billboard Top 100. 
+        </p>
         <div class="graph">
             <img src="plots/plot2.png" alt="Graph 2: Artist Frequency" id="img2" />
         </div>
         <p class="explanation">
-            This graph displays the rankings of the top five Christmas carols from the previous graph, showing how their positions have fluctuated over time.
-            It highlights both the consistency and changing popularity of certain songs.
+            The popularity of these songs appears to have peaked at the time of their release. 
+            "All I Want for Christmas Is You" unsurprisingly leads the current charts, while both "Rockin' Around the Christmas Tree" and "Jingle Bell Rock" continue to enjoy enduring popularity, resonating as much with listeners today as they did when they were first released.
         </p>
 
-        <h2>Graph 3: Number of Christmas Carols in Billboard Top 100</h2>
+        <!-- GRAPH 3 -->
+        <p class="explanation">
+            So exactly how many Christmas songs place on the Billboard Top 100 each year? Are people collectively listening to more Christmas music over time?
+        </p>
         <div class="graph">
             <img src="plots/plot3.png" alt="Graph 3: Genre Distribution" id="img3" />
         </div>
         <p class="explanation">
-            This graph visualizes the total number of Christmas carols that made it to the Billboard Top 100 across the years, showing the trends of the prevalence of holiday music in the charts.
-            In earlier years, there seems to be a much higher number of Christmas carols compared to today.
+            There were spikes in the early 1960s, largely due to the release of several Christmas songs during that period. 
+            Since then, the number of Christmas songs on the Billboard Top 100 has steadily increased over time.
         </p>
 
-        <h2>Graph 4: Peak Positions Histogram</h2>
+        <p class="explanation">
+            Within the charts, are Christmas songs placing at the top of the charts, or are they barely making the list?
+        </p>
         <div class="graph">
             <img src="plots/plot4.png" alt="Graph 4: Yearly Trends" id="img4" />
         </div>
         <p class="explanation">
-            This histogram illustrates the distribution of the peak positions for the Christmas carols. A lower position means a higher ranking.
-            This helps us understand how competitive Christmas songs are over time.
+            When Christmas songs make their way onto the chart, they don’t just make an appearance—they dominate. 
+            More often than not, they land within the top 25, a testament to the powerful presence of holiday music during the season. It’s as if the festive spirit takes over the Billboard rankings, with Christmas tracks consistently making their mark at the highest levels.
         </p>
 
-        <h2>Graph 5: Consecutive Topping Christmas Carols</h2>
+        <!-- GRAPH 5 -->
+        <h2>What songs have prevailed?</h2>
         <div class="graph">
             <img src="plots/plot5.png" alt="Graph 5: Chart Performance Over Time" id="img5" />
         </div>
         <p class="explanation">
-            This graph tracks the performance of Christmas carols that have topped the Billboard 100 for consecutive years. It highlights songs that have seen long-term popularity.
+            Ms. Mariah has been a chart powerhouse since 2012, securing an impressive streak of five consecutive years at the top! Meanwhile, timeless classics like White Christmas have also proven their dominance, starting all the way back in 1958. These enduring holiday hits have stood the test of time, continuing to claim their place among the top chart contenders year after year.
+        </p>
+
+        <h2>So, what next?</h2>
+        <p class="explanation">
+            Christmas songs have been a yearly staple, and seem to be an undeniable part of people’s lives with their ability to consistently place on the Billboard charts every year. Was the Christmas song landscape always the same? Not exactly. As new Christmas songs get put out, we see a transition. 
+            Looking ahead, we could dive into the data from 2017 to the present and analyze whether anything has changed. Does Mariah still reign supreme, or are new contenders starting to take the spotlight? It’ll be interesting to see how the holiday music scene continues to evolve.
         </p>
 
     </main>
-
-    <footer>
-        <p>© 2024 Willa Liou. All rights reserved.</p>
-    </footer>
 
     <!-- Modal (Lightbox) -->
     <div id="myModal" class="modal">

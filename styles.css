@@ -14,17 +14,8 @@ header {
     padding: 20px;
     text-align: center;
     border-bottom: 5px solid #c0c0c0;
-    animation: fadeIn 1s forwards;
 }
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
 
 main {
     max-width: 1200px;
@@ -65,14 +56,6 @@ p {
     cursor: pointer; /* Indicate the image is clickable */
 }
 
-footer {
-    text-align: center;
-    margin-top: 20px;
-    padding: 10px;
-    background-color: #a52a2a; /* Dark red */
-    color: #fff;
-    border-top: 5px solid #c0c0c0; /* Silver */
-}
 
 /* Additional styles for visual elements */
 .btn {
