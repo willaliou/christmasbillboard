@@ -18,15 +18,7 @@ header {
     padding: 30px;
     text-align: center;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    border-bottom: 5px solid #c0c0c0;
-}
-
-.intro-media {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    border-bottom: 4mm ridge #c0c0c0;
 }
 
 .dataset-link {
