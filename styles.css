@@ -6,7 +6,7 @@ body {
     color: #333;
     scroll-behavior: smooth;
     transition: background-color 0.3s ease;
-    background-image: url('pics/xmasbackground.jpg');
+    background-image: url('pics/xmasbgd.jpg');
     background-size: contain;
 }
 
