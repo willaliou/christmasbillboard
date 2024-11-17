@@ -36,7 +36,7 @@
 
         <!-- GRAPH 2 -->
         <p class="explanation">
-            Let’s further examine the positions of a couple of the top songs on the list, but by the year they were on the Billboard Top 100. 
+            Let’s further examine the positions of a five of the top songs on the list, but by the year they were on the Billboard Top 100. 
         </p>
         <div class="graph">
             <img src="plots/plot2.png" alt="Graph 2: Artist Frequency" id="img2" />
@@ -61,8 +61,15 @@
         <p class="explanation">
             Within the charts, are Christmas songs placing at the top of the charts, or are they barely making the list?
         </p>
+        <!-- GRAPH 4 -->
         <div class="graph">
-            <img src="plots/plot4.png" alt="Graph 4: Yearly Trends" id="img4" />
+            <!-- <img src="plots/plot4.png" alt="Graph 4: Yearly Trends" id="img4" /> -->
+            <iframe src="plots/interactive_plot4.html" 
+                width="100%" 
+                height="500px" 
+                frameborder="0" 
+                title="Distribution of Peak Positions for Christmas Songs">
+            </iframe>
         </div>
         <p class="explanation">
             When Christmas songs make their way onto the chart, they don’t just make an appearance—they dominate. 
@@ -84,6 +91,8 @@
             Looking ahead, we could dive into the data from 2017 to the present and analyze whether anything has changed. Does Mariah still reign supreme, or are new contenders starting to take the spotlight? It’ll be interesting to see how the holiday music scene continues to evolve.
         </p>
 
+        <h2>Thank You for Reading!</h2>
+        <img src="pics/santapic.jpg" alt="Santa Claus" width="300" height="auto">
     </main>
 
     <!-- Modal (Lightbox) -->
@@ -116,5 +125,9 @@
         }
     </script>
 
-</body>
+     <footer>
+        <p>&copy; Made by Willa Liou for DSCI 304, December 2024</p>
+        <p>For more information on the dataset used, visit <a href="https://www.kaggle.com/datasets/sharkbait1223/billboard-top-100-christmas-carol-dataset/data" target="_blank">Christmas Billboard Dataset</a></p>
+    </footer>
+    </body>
 </html>
