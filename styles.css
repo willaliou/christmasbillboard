@@ -20,6 +20,15 @@ header {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     border-bottom: 4mm ridge #c0c0c0;
 }
+footer {
+    background-color: rgba(27, 137, 51, 0.776);
+    color: white;
+    text-align: center;
+    padding: 20px 15px;
+    position: relative; 
+    width: 100%;
+    font-size: 14px;
+}
 
 .dataset-link {
     color: #0b8e14;
